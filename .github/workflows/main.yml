@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ./action-a
+      - name: Bump version and push tag
+        uses: mathieudutour/github-tag-action@v4.5
         with:
-          MY_NAME: "Mona"
+          github_token: ${{ 474cc06c13ff8608641918d4aebf7738cef94646 }}
